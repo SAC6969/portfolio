@@ -90,7 +90,6 @@ section{
 }
 
 .home{
-    min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,6 +205,29 @@ span {
     border: .2rem solid var(--second-bg-color);
     transition: .5s ease;
 }
+
+.trans i{
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.trans h4{
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.trans span{
+    font-size: 1.3rem;
+    color: red;
+}
+
+.trans i:hover{
+    font-size: 5rem;
+    transform: scale(1.02);
+    border-radius: 1rem;
+    background-color: var(--second-bg-color);
+}
+
 /* service */
 .services h2{
     margin-bottom: 5rem;
@@ -448,9 +470,6 @@ span {
 }
 
 @media (max-width: 991px){
-    .home{
-        max-width: 100vw;
-    }
     .header{
         padding: 2rem 3%;
         max-width: 100%;
@@ -474,10 +493,13 @@ span {
 }
 
 @media (max-width: 768px){
-    .home{
-        max-width: 100vw;
+    section{
+        padding-top: 5rem;
     }
-
+    .home{
+        min-height: 90vh;
+    }
+    
     #menu-icon{
         display: block;
     }
@@ -563,6 +585,10 @@ span {
     }
 
     .projects h2{
+        margin-bottom: 3rem;
+    }
+
+    .about h2{
         margin-bottom: 3rem;
     }
 
