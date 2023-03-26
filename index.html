@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Sachin Varma</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="#" class="logo">Portfolio</a>
+            <a class="toggle">
+                <i class='bx bxs-moon' ></i>
+            </a>
+        </div>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <!-- <a href="#blog">Blogs</a> -->
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Sachin Verma</h1>
+            <h3>And I'am <span class="multiple-text">Full Stack Developer.</span></h3>
+            <div class="social-media">
+                <a href="https://github.com/SAC6969" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://in.linkedin.com/in/sachin-verma-261b75220" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn">Download Resume</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="sub-heading">
+                <div class="trans">
+                    <h3>Frontend Developer</h3>
+                    <p>I have experience with HTML, CSS, JavaScript, and  front-end frameworks such as React. I am skilled in creating responsive and user-friendly web interfaces that adhere to modern design principles and best practices.</p>
+                </div>
+                <div class="trans">
+                    <h3>Backend Developer</h3>
+                    <p>I have experience with server-side programming language like Node.js. I have created several projects using Express.js. I am proficient in developing RESTful APIs, implementing database models, and integrating third-party services.</p>
+                </div>
+                <div class="trans">
+                    <h3>Full Stack Developer</h3>
+                    <p>My primary focus is on the development and implementation of both front-end and back-end languages and frameworks. I am able to build robust and scalable web applications that deliver seamless user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="service-container">
+            <div class="service-box first">
+                <i class='bx bxl-redux'></i>
+                <h3>Frontend Development</h3>
+                <p>Ready to take your website or application to the next level? Contact us today to learn more about our frontend development services and how we can help you achieve your goals.</p>
+                <a class="btn frontendService">Read More</a>
+            </div>
+            <div class="service-box second">
+                <i class='bx bx-code-alt'></i>
+                <h3>Backend Development</h3>
+                <p>Ready to take your website or application to the next level? Contact us today to learn more about our Backend development services and how we can help you achieve your goals.</p>
+                <a class="btn backendService">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="static/1.png" alt="socail api" >
+                <div class="porjects-layer">
+                    <h4>Social Api</h4>
+                    <p>Created Social Api like facebook.</p>
+                    <a href="https://github.com/SAC6969/SocialApi" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="static/4.jpeg" alt="" >
+                <div class="porjects-layer">
+                    <h4>Habit Tracker</h4>
+                    <p>Created Api to track habit.</p>
+                    <a href="https://github.com/SAC6969/Habit-Tracker" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="static/3.png" alt="" >
+                <div class="porjects-layer">
+                    <h4>Hospital Api</h4>
+                    <p>design an API for the doctors of a Hospital.</p>
+                    <a href="https://github.com/SAC6969/Hospital-Api" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <section class="blog" id="blog">
+        <h2 class="heading">Blog<span>s</span></h2>
+         <div class="service-container">
+            <div class="service-box">
+                <i class='bx bxl-redux'></i>
+                <h3>Frontend Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, placeat saepe odio recusandae exercitationem officia repellendus rerum a praesentium optio maiores perferendis tempora, excepturi facilis quibusdam. Perspiciatis possimus dolorum in?</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="service-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Backend Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, placeat saepe odio recusandae exercitationem officia repellendus rerum a praesentium optio maiores perferendis tempora, excepturi facilis quibusdam. Perspiciatis possimus dolorum in?</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div> 
+    </section> -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="/submit/data" method="post" id="form">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="phone" placeholder="Mobile Number">
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+            <textarea name="message" id="" cols="20" rows="10" placeholder="Your Messgage"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Sachin Varma | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
