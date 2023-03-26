@@ -83,7 +83,7 @@ function getData(form) {
         Subject : obj.subject,
 	    Body : `<h2>Name:- ${obj.name}</h2><br><h2>Email:- ${obj.email}</h2><br><h2>Phone:- ${obj.phone}</h2><br><br><h2>Message:- ${obj.message}</h2>`,
     }).then(
-        message => alert(message)
+        message => alert("Sent.")
     );
 }
 
