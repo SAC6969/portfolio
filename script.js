@@ -90,29 +90,33 @@ function getData(form) {
 
 // scroll 
 
-ScrollReveal({ 
-    reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
+const mq = window.matchMedia("(min-width: 1000px)");
 
-ScrollReveal().reveal('.home-content, .heading',{ origin: 'top' });
-ScrollReveal().reveal('.home-content h1',{ origin: 'left' });
-
-ScrollReveal().reveal('.about-content, .heading',{ origin: 'top' });
-ScrollReveal().reveal('.about-content h3',{ origin: 'left' });
-
-ScrollReveal({ 
-    reset: true,
-    distance: '360px',
-    duration: 2000,
-    delay: 200
-});
-
-ScrollReveal().reveal('.first',{ origin: 'left' });
-ScrollReveal().reveal('.second',{ origin: 'right' });
-
+if(mq.matches){
+    ScrollReveal({ 
+        reset: true,
+        distance: '80px',
+        duration: 2000,
+        delay: 200
+    });
+    
+    ScrollReveal().reveal('.home-content, .heading',{ origin: 'top' });
+    ScrollReveal().reveal('.home-content h1',{ origin: 'left' });
+    
+    ScrollReveal().reveal('.about-content, .heading',{ origin: 'top' });
+    ScrollReveal().reveal('.about-content h3',{ origin: 'left' });
+    
+    ScrollReveal({ 
+        reset: true,
+        distance: '360px',
+        duration: 2000,
+        delay: 200
+    });
+    
+    ScrollReveal().reveal('.first',{ origin: 'left' });
+    ScrollReveal().reveal('.second',{ origin: 'right' });
+    
+}
 
 const typed = new Typed('.multiple-text',{
     strings: ['Frontend Developer','Backend Developer','Full Stack Developer','MERN Stack Developer'],
