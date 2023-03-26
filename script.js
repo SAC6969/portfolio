@@ -30,21 +30,6 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
-// const typeds = new Typed('.front-language',{
-//     strings: ['HTML','CSS','Javascript'],
-//     typeSpeed:100,
-//     backSpeed:100,
-//     backDelay:1000,
-//     loop:true
-// })
- 
-// :root {
-//     --bg-color: #1f242d;
-//     --second-bg-color: #323946;
-//     --text-color:#fff;
-//     --main-color:#0ef;
-// }
-
 let toggle = document.querySelector('.toggle');
 var toggleVar = true;
 toggle.addEventListener('click',function(e){
@@ -68,12 +53,11 @@ document.getElementById('form').addEventListener('submit',function(e){
     e.preventDefault();
     getData(e.target);
 })
-// --url 'smtp://sandbox.smtp.mailtrap.io:2525' \
 
 function getData(form) {
   var formData = new FormData(form);
   let obj = Object.fromEntries(formData);
-  console.log("obj",obj);
+//   console.log("obj",obj);
     Email.send({
         Host: "smtp.elasticemail.com",
         Username : "sachinvermaa1234@gmail.com",
