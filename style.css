@@ -274,6 +274,11 @@ span {
     margin: 1rem 0rem 3rem;
 }
 
+.service-box i:hover{
+    transform: translateY(-20%);
+    transition: .5s ease;
+}
+
 
 /* blog */
 .blog .heading{
@@ -494,7 +499,7 @@ span {
 
 @media (max-width: 768px){
     section{
-        padding-top: 5rem;
+        padding: 10rem 3% 2rem;
     }
     .home{
         min-height: 90vh;
